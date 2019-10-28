@@ -6,9 +6,9 @@
     <session-factory>
         <!-- JDBC Database connection settings -->
         <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-        <property name="connection.url">jdbc:mysql://localhost:3306/mybatisdb?serverTimezone=UTC</property>
-        <property name="connection.username">mybatis</property>
-        <property name="connection.password">m1b4t1s</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/hibernatedb?serverTimezone=UTC</property>
+        <property name="connection.username">hibernate</property>
+        <property name="connection.password">h1b3rn4t3</property>
 
         <!-- JDBC connection pool settings ... using built-in test pool -->
         <property name="connection.pool_size">1</property>
@@ -36,7 +36,7 @@
         <!--  to the database when the SessionFactory is created. With create-drop, the -->
         <!--  database schema will be dropped when the SessionFactory is closed explicitly.-->
         <!-- e.g. validate | update | create | create-drop&ndash;&gt;-->
-        <property name="hibernate.hbm2ddl.auto">create</property>
+<!--        <property name="hibernate.hbm2ddl.auto">create</property>-->
 
         <mapping class="org.moita.entites.Author" />
         <mapping class="org.moita.entites.Book" />
